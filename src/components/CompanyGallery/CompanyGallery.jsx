@@ -7,7 +7,7 @@ const CompanyGallery = ({ images = [] }) => {
         {images.map((image, index) => (
             <div
                 key={index}
-                className="relative w-full max-w-[300px] h-64 m-12 flex items-center p-10 grayscale opacity-70 hover:opacity-100 hover:transition"
+                className="relative w-full max-w-[300px] h-64 m-12 flex items-center p-0 xl:p-10 grayscale opacity-70 hover:opacity-100 hover:transition"
             >
                 <Image 
                     src={image.src}

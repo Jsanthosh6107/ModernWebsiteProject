@@ -19,6 +19,7 @@ const Button = ({ text = "currentText", flipColor = true, invert = false}) => {
   return (
     <a
       className={`${baseClassesParent} ${parentClasses}`}
+      href="/"
     >
       <span className="relative z-10">{text}</span>
 

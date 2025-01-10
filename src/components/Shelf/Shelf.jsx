@@ -4,7 +4,7 @@ import { OneIcon, TwoIcon, ThreeIcon } from "@/components/svgs";
 const Shelf = ({headers = [], text = []}) => {
     const divClasses = "flex flex-col items-center"
   return (
-    <section className="flex flex-row justify-center text-center x-margin mt-40 full-box-shadow px-12 rounded-[50px] pb-20 bg-white">
+    <section className="flex flex-row flex-wrap xl:flex-nowrap justify-center text-center x-margin mt-40 full-box-shadow px-12 rounded-[50px] pb-20 bg-white ">
         <div className={`${divClasses}`}>
             <OneIcon aria-label="One Symbol" classes="w-16 py-8"/>
             <h3 className="text-2xl font-medium">{headers[0]}</h3>
