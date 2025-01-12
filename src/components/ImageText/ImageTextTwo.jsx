@@ -9,12 +9,12 @@ const ImageTextTwo = ({ITTitle = "", ITSubTitle = "", Image, Title = "", Descrip
             <p className="text-2xl mt-4">{ITSubTitle}</p>
         </div>
 
-        <div className="flex flex-row items-center pt-8">
+        <div className="flex flex-col md:flex-row items-center pt-8">
             <div className="w-[50%] flex justify-center">
-                <div className="w-[50%] ">{Image}</div>
+                <div className="w-full md:w-[50%] ">{Image}</div>
             </div>
-            <div className="w-[50%] flex flex-col text-left items-start gap-8">
-                <h2 className="text-4xl font-medium pr-[20%]">{Title}</h2>
+            <div className="md:w-[50%] flex flex-col text-center md:text-left items-center md:items-start gap-8">
+                <h2 className="text-4xl font-medium md:pr-[20%]">{Title}</h2>
                 <p className="text-lg">{Description}</p>
                 <Button text={ButtonText} flipColor={false} />
             </div>

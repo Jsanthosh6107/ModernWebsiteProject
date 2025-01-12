@@ -8,17 +8,17 @@ const Shelf = ({headers = [], text = []}) => {
         <div className={`${divClasses}`}>
             <OneIcon aria-label="One Symbol" classes="w-16 py-8"/>
             <h3 className="text-2xl font-medium">{headers[0]}</h3>
-            <p className="pt-4 px-20">{text[0]}</p>
+            <p className="pt-4 md:px-20">{text[0]}</p>
         </div>
         <div className={`${divClasses}`}>
             <TwoIcon aria-label="Two Symbol" classes="w-16 py-8"/>
             <h3 className="text-2xl font-medium">{headers[1]}</h3>
-            <p className="pt-4 px-20">{text[1]}</p>
+            <p className="pt-4 md:px-20">{text[1]}</p>
         </div>
         <div className={`${divClasses}`}>
             <ThreeIcon aria-label="Three Symbol" classes="w-16 py-8"/>
             <h3 className="text-2xl font-medium">{headers[2]}</h3>
-            <p className="pt-4 px-20">{text[2]}</p>
+            <p className="pt-4 md:px-20">{text[2]}</p>
         </div>
     </section>
   );

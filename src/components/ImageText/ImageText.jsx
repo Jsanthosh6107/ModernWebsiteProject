@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const ImageText = ({imageInfo = {}, textContent = [], inverted = true}) => {
   
-  const defaultClasses = "flex-row";
-  const invertedClasses = "flex-row-reverse";
+  const defaultClasses = "flex-col-reverse md:flex-row";
+  const invertedClasses = "flex-col-reverse md:flex-row-reverse";
 
   let finalClasses = inverted ? invertedClasses : defaultClasses;
-  finalClasses = `${finalClasses} flex justify-center items-center x-margin my-20`;
+  finalClasses = `${finalClasses} px-8 text-center md:text-left flex justify-center items-center x-margin my-20`;
 
   if (!imageInfo) {
     return null;
@@ -21,7 +21,7 @@ const ImageText = ({imageInfo = {}, textContent = [], inverted = true}) => {
           {textContent.map((text, index) => (
             <div
               key={index}
-              className={`${inverted ? "pl-16" : "pr-16"} py-3`}
+              className={`${inverted ? "md:pl-16" : "md:pr-16"} py-3`}
             >
               <p className="text-xl">{text}</p>
             </div>

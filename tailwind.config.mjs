@@ -18,8 +18,8 @@ export default {
     function ({ addUtilities }) {
       addUtilities({
         '.x-margin': {
-          '@screen md': { marginLeft: '0%', marginRight: '0%' },
-          '@screen lg': { marginLeft: '5%', marginRight: '5%' },
+          marginLeft: '5%',
+          marginRight: '5%',
           '@screen xl': { marginLeft: '10%', marginRight: '10%' },
           '@screen 2xl': { marginLeft: '15%', marginRight: '15%' },
         },

@@ -16,7 +16,7 @@ const Footer = ({buttonText = "", callToAction = "", links = [], copyright = ""}
       </div>
       <div className="pb-12">
           <div className="x-margin flex flex-row justify-between border-gray-700 border-t-[1px] pt-10">
-              <div className="flex flex-wrap flex-row gap-8">
+              <div className="flex flex-wrap flex-col sm:flex-row gap-3 sm:gap-8">
                   {links.map((link, index) => (
                       <div
                           key={index}

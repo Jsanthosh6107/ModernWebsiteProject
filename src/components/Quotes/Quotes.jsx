@@ -7,10 +7,30 @@ const Quotes = ({ quoteList = [] }) => {
     
     const [currentIndex, setCurrentIndex] = useState(0);
     const [autoPlay, setAutoPlay] = useState(true);
+    const [touchStart, setTouchStart] = useState(0);
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % quoteList.length);
     };
+
+    const previousSlide = () => {
+      setCurrentIndex((prevIndex) => (prevIndex - 1 + quoteList.length) % quoteList.length);
+    }
+
+    const handleTouchStart = (e) => {
+        setTouchStart(e.touches[0].clientX);
+    }
+
+    const handleTouchEnd = (e) => {
+      const endTouchX = e.changedTouches[0].clientX;
+      const swipeDistance = touchStart - endTouchX;
+
+      if (swipeDistance > 50){
+        nextSlide();
+      } else if (swipeDistance < -50){
+        previousSlide();
+      }
+    }
 
     const goToSlide = (index) => {
         setCurrentIndex(index);
@@ -29,11 +49,13 @@ const Quotes = ({ quoteList = [] }) => {
 
         <div className="flex transition-transform duration-1000 ease-in-out"
             style={{ transform: `translateX(-${currentIndex * 100}%)`}}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
         >
           {quoteList.map((quote, index) => (
             <div
               key={index}
-              className="flex items-center px-16 pt-16 shrink-0 w-full gap-12"
+              className="flex flex-col sm:flex-row items-center px-16 pt-16 shrink-0 w-full gap-12"
             >
               <div>
                 <QuoteIcon classes="w-24" />
