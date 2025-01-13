@@ -113,7 +113,8 @@ export const homeLayout = [
                 src: "/images/TechLaptop.jpg",
                 alt: "Image of Modern Website Design",
                 width: 800,
-                height: 500
+                height: 500,
+                priority: true
               }
             },
             {

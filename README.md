@@ -8,4 +8,8 @@ How the website works:
   -The page is built in homeLayoutContent, subsequent pages can be added with another LayoutContent page.  
   -page.js is the actual page.  
   -SVG's are uploaded via index.js  
+
+-Commands:
+-npx next build; npx next export
+-Get-Process node | Stop-Process -Force  >>> Remove-Item -Recurse -Force .next >>> npm install
   

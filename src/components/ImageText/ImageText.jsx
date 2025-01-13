@@ -36,6 +36,7 @@ const ImageText = ({imageInfo = {}, textContent = [], inverted = true}) => {
               width={imageInfo.width || 500} 
               height={imageInfo.height || 300}
               className="rounded-[15px]"
+              priority
             />
           </div>
         )}

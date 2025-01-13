@@ -71,14 +71,14 @@ const Cards = ({ subTitle = "", title = "", description = "", cards = [] }) => {
                   <div className="flex flex-row flex-wrap sm:flex-nowrap justify-center lg:justify-start gap-3">
                     {card.cardStatistics.map((cardStatistic, statIndex) => (
                         <div
-                            key={statIndex}
-                            className={`min-w-[90px] sm:min-w-[150px] text-center sm:text-left ${
-                                statIndex !== 0 && "sm:border-l-gray-500 sm:border-l sm:pl-3 sm:ml-3"
+                          key={statIndex}
+                          className={`min-w-[90px] sm:min-w-[150px] text-center sm:text-left ${
+                              statIndex !== 0 && "sm:border-l-gray-500 sm:border-l sm:pl-3 sm:ml-3"
                             }`}
-                            >
-                            <h3 className="text-2xl sm:text-5xl font-medium">{cardStatistic.cardNumber}</h3>
-                            <p className="text-xs sm:text-base">{cardStatistic.cardNumberText}</p>
-                            </div>
+                        >
+                          <h3 className="text-2xl sm:text-5xl font-medium">{cardStatistic.cardNumber}</h3>
+                          <p className="text-xs sm:text-base">{cardStatistic.cardNumberText}</p>
+                        </div>
                     ))}
                   </div>
                   <div>
@@ -93,6 +93,8 @@ const Cards = ({ subTitle = "", title = "", description = "", cards = [] }) => {
                         alt={card.imageInfo.alt || ""}
                         width={card.imageInfo.width || 300} // Reduced for smaller screens
                         height={card.imageInfo.height || 200}
+                        priority={card.imageInfo.priority || false}
+                        loading={card.imageInfo.priority ? 'eager' : 'lazy'}
                         className="rounded-[15px] w-auto h-auto max-w-full"
                       />
                     </div>
