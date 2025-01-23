@@ -63,7 +63,7 @@ const Quotes = ({ quoteList = [] }) => {
               <div className="flex flex-col gap-4">
                 <p className="text-xl text-left">{quote.quote}</p>
                 <div className="flex flex-row items-center gap-2">
-                  <h3 className="font-semibold text-2xl">{quote.name}</h3>
+                  <p className="font-semibold text-2xl">{quote.name}</p>
                   <span>-</span>
                   <p className="text-lg">{quote.business}</p>
                 </div>

@@ -76,7 +76,7 @@ const Cards = ({ subTitle = "", title = "", description = "", cards = [] }) => {
                               statIndex !== 0 && "sm:border-l-gray-500 sm:border-l sm:pl-3 sm:ml-3"
                             }`}
                         >
-                          <h3 className="text-2xl sm:text-5xl font-medium">{cardStatistic.cardNumber}</h3>
+                          <h4 className="text-2xl sm:text-5xl font-medium">{cardStatistic.cardNumber}</h4>
                           <p className="text-xs sm:text-base">{cardStatistic.cardNumberText}</p>
                         </div>
                     ))}

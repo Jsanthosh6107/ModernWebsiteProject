@@ -20,7 +20,7 @@ const Numbers = ({ numbersList = [] }) => {
 
           return (
             <div key={index} ref={ref}>
-              <h2 className="text-7xl font-semibold">
+              <p className="text-7xl font-semibold">
                 {inView && (
                   <CountUp
                     start={0}
@@ -30,7 +30,7 @@ const Numbers = ({ numbersList = [] }) => {
                   />
                 )}
                 {number.topSymbol}
-              </h2>
+              </p>
               <p className="text-2xl font-medium">{number.bottomString}</p>
             </div>
           );
