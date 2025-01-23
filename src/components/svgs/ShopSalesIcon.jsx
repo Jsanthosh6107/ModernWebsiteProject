@@ -6,6 +6,7 @@ const ShopSalesIcon = ({ classes = "" }) => {
       viewBox="0 0 64 64"
       xmlns="http://www.w3.org/2000/svg"
       className={classes}
+      role="img"
     >
       <defs>
         <style>

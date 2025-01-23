@@ -12,7 +12,6 @@ const CompanyGallery = ({ images = [] }) => {
           <Image
             src={image.src}
             alt={image.alt || "Gallery Image"}
-            layout="intrinsic"
             width={image.width || 500}
             height={image.height || 300}
             priority

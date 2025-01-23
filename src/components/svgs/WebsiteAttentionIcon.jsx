@@ -10,6 +10,7 @@ const WebsiteAttentionIcon = ({classes = ""}) => {
             viewBox="0 0 512 512" 
             xmlSpace="preserve"
             className={classes}
+            role="img"            
         >
             <g>
                 <g>

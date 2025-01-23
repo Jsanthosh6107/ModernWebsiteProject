@@ -9,6 +9,7 @@ const StockIcon = ({ fill = "", stroke = "", classes = ""}) => {
       fill={fill}
       stroke={stroke}
       className={classes}
+      role="img"      
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>

@@ -11,6 +11,7 @@ const QuoteIcon = ({classes = ""}) => {
             fill="#696969" 
             transform="rotate(180)"
             className={classes}
+            role="img"
         >
 
         <g id="SVGRepo_bgCarrier" strokeWidth="0"/>

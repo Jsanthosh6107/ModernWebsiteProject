@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ text = "currentText", flipColor = true, invert = false}) => {
+const Button = ({ text = "currentText", flipColor = true, invert = false, classes=""}) => {
   const baseClassesParent =
     "relative inline-block py-3.5 px-10 rounded-full border-[1px] overflow-hidden group duration-500";
   const baseClassesChild =
@@ -18,7 +18,7 @@ const Button = ({ text = "currentText", flipColor = true, invert = false}) => {
 
   return (
     <a
-      className={`${baseClassesParent} ${parentClasses}`}
+      className={`${baseClassesParent} ${parentClasses} ${classes}`}
       href="/"
     >
       <span className="relative z-10">{text}</span>

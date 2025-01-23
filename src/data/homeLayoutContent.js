@@ -205,10 +205,10 @@ export const homeLayout = [
         type: "Numbers",
         data: {
           numbersList: [
-            { topString: "140%", bottomString: "Increased Engagement" },
-            { topString: "3x", bottomString: "More Conversions" },
-            { topString: "70%", bottomString: "Higher User Satisfaction" },
-            { topString: "38%", bottomString: "Bounce Less" },
+            { topNumber: 140, topSymbol: "%" , bottomString: "Increased Engagement" },
+            { topNumber: 3, topSymbol: "x" , bottomString: "More Conversions" },
+            { topNumber: 70, topSymbol: "%" , bottomString: "Higher User Satisfaction" },
+            { topNumber: 38, topSymbol: "%" , bottomString: "Bounce Less" },
           ]
         }
       },

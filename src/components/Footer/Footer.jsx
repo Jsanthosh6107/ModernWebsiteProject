@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "@/components/Button/Button";
+import SlideIn from "@/hooks/SlideIn";
 
 const Footer = ({buttonText = "", callToAction = "", links = [], copyright = ""}) => {
   const currentYear = new Date().getFullYear();
@@ -8,10 +9,12 @@ const Footer = ({buttonText = "", callToAction = "", links = [], copyright = ""}
     <footer className="bg-black text-white">
       <div className="py-40">
           <div className="x-margin flex flex-col justify-center text-center w-auto">
-              <div className="pb-6">
+              <SlideIn classes="pb-6">
                   <Button text={buttonText} flipColor={false} invert={true}/>
-              </div>
-              <h2 className="text-8xl font-semibold uppercase">{callToAction}</h2>
+              </SlideIn>
+              <SlideIn delay={100}>
+                <h2 className="text-8xl font-semibold uppercase">{callToAction}</h2>
+              </SlideIn>
           </div>
       </div>
       <div className="pb-12">

@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { StockIcon } from "@/components/svgs";
 import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
+import SlideIn from "@/hooks/SlideIn";
 
 const Navbar = ({ navList = [] }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,30 +24,35 @@ const Navbar = ({ navList = [] }) => {
     <header className="relative z-50">
       <nav className="flex flex-row justify-between items-center x-margin pt-8">
         {/* Left section: Logo */}
-        <StockIcon fill="black" aria-label="Company Logo" classes="w-20" />
-
+        <SlideIn flip={true}>
+          <StockIcon fill="black" aria-label="Company Logo" classes="w-20" />
+        </SlideIn>
         {/* Center section: Nav links (hidden on small screens) */}
-        <ul className="hidden md:flex flex-row gap-2 lg:gap-8 font-medium text-lg">
-          {navList.map((nav, index) => (
-            <li key={index}>
-              <a
-                href={nav.url}
-                className={`pb-3 px-5 border-b-gray-500 ${
-                  currentPath === nav.url
-                    ? ""
-                    : "hover:text-gray-500 hover:border-b-[1px] hover:transition"
-                }`}
-              >
-                {nav.text}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <SlideIn flip={true} delay={100}>
+          <ul className="hidden md:flex flex-row gap-2 lg:gap-8 font-medium text-lg">
+            {navList.map((nav, index) => (
+              <li key={index}>
+                <a
+                  href={nav.url}
+                  className={`pb-3 px-5 border-b-gray-500 ${
+                    currentPath === nav.url
+                      ? ""
+                      : "hover:text-gray-500 hover:border-b-[1px] hover:transition"
+                  }`}
+                >
+                  {nav.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </SlideIn>
 
         {/* Right section: Button (hidden on small screens) */}
-        <div className="hidden md:block">
-          <Button text="Contact Us" flipColor={false} />
-        </div>
+        <SlideIn flip={true} delay={200}>
+          <div className="hidden md:block">
+            <Button text="Contact Us" flipColor={false} />
+          </div>
+        </SlideIn>
 
         {/* Hamburger icon for mobile (shown below md) */}
         <button

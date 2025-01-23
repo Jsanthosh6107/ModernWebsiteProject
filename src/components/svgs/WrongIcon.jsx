@@ -9,6 +9,7 @@ const WrongIcon = ({classes = ""}) => {
             stroke="#ff0000"
             strokeWidth="53.248000000000005"
             className={classes}
+            role="img"           
         >
             <g id="SVGRepo_bgCarrier" strokeWidth="0" />
 

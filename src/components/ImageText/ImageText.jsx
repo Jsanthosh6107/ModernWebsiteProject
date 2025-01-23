@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import SlideIn from "@/hooks/SlideIn";
 
 const ImageText = ({imageInfo = {}, textContent = [], inverted = true}) => {
   
@@ -23,7 +24,9 @@ const ImageText = ({imageInfo = {}, textContent = [], inverted = true}) => {
               key={index}
               className={`${inverted ? "md:pl-16" : "md:pr-16"} py-3`}
             >
-              <p className="text-xl">{text}</p>
+              <SlideIn delay={index * 100}>
+                <p className="text-xl">{text}</p>
+              </SlideIn>
             </div>
           ))}
         </div>
