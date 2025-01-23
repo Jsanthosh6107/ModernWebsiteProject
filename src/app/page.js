@@ -3,7 +3,7 @@ import PagelayoutRenderer from "@/components/PageLayoutRenderer/PageLayoutRender
 import Head from "next/head";
 
 export const metadata = {
-  title: "Modern Website",
+  title: "SEO Optimized Modern Websites At Industry Standards",
   description: "Upgrade to a modern website for performance, accessibility, and growth",
 };
 

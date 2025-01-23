@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import { BackgroundWaves} from "@/components/svgs";
 
 export const metadata = {
-  title: 'Modern Website',
+  title: 'Modern Websites',
   description: 'Upgrade to a modern website for performance, accessibility, and growth',
   openGraph: {
     title: 'Modern Website',
@@ -74,6 +74,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:description" content={metadata.twitter.description} />
         <meta name="twitter:image" content={metadata.twitter.images[0]} />
         <meta name="google-site-verification" content="RzZSnijK1k1CAbyHtofAzzO3YVufxy61eI5hbyYrWFc" />
+        <link rel="canonical" href="https://modernwebsites.vercel.app" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
