@@ -69,11 +69,11 @@ export default function RootLayout({ children }) {
         <meta property="og:image" content={metadata.openGraph.images[0].url} />
         <meta property="og:site_name" content={metadata.openGraph.siteName} />
         <meta property="og:locale" content={metadata.openGraph.locale} />
-
         <meta name="twitter:card" content={metadata.twitter.card} />
         <meta name="twitter:title" content={metadata.twitter.title} />
         <meta name="twitter:description" content={metadata.twitter.description} />
         <meta name="twitter:image" content={metadata.twitter.images[0]} />
+        <meta name="google-site-verification" content="RzZSnijK1k1CAbyHtofAzzO3YVufxy61eI5hbyYrWFc" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
