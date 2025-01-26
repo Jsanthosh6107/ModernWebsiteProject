@@ -1,4 +1,5 @@
 User-Agent: *
 Allow: /
-Disallow: 
-Sitemap: https://modernwebsites.vercel.app
+Disallow: /private/
+
+Sitemap: https://modernwebsites.vercel.app/sitemap.xml
