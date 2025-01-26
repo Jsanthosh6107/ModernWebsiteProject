@@ -31,7 +31,7 @@ const PagelayoutRenderer = ({ layout }) => {
             case "Tiles":
                 return <Tiles tilesHeader={item.data.tilesHeader} tilesTitle={item.data.tilesTitle} key={index} tiles={item.data.tiles}/>;
             case "ImageTextTwo":
-                return <ImageTextTwo key={index} ITTitle={item.data.ITTitle} ITSubTitle={item.data.ITSubTitle} Image={item.data.Image} Title={item.data.Title} Description={item.data.Description} ButtonText={item.data.ButtonText} />;
+                return <ImageTextTwo key={index} ITTitle={item.data.ITTitle} ITSubTitle={item.data.ITSubTitle} SVGImage={item.data.SVGImage} Title={item.data.Title} Description={item.data.Description} ButtonText={item.data.ButtonText} PixelImage={item.data.PixelImage} />;
             case "Comparison":
                 return <Comparison key={index} headerOne={item.data.headerOne} headerTwo={item.data.headerTwo} listOne={item.data.listOne} listTwo={item.data.listTwo} />
             case "Cards":

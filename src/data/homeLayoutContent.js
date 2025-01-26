@@ -66,7 +66,13 @@ export const homeLayout = [
         data: {
           ITTitle: "No Reason To Wait",
           ITSubTitle: "Lead your competition & top your industry right now",
-          Image: <ShopSalesIcon />,
+          SVGImage: <ShopSalesIcon />,
+          /*PixelImage: {
+            src: "/images/StandOut.jpg",
+            alt: "Image of Standing Out",
+            width: 800,
+            height: 500,
+          }, This can be used as a hero if set up correctly*/ 
           Title: "Fast Process, Quick Setup, Results Speak For Themselves",
           Description: "A modern website tailored for the current online space will always dominate the market. In an enviroment that's dictated by attention, it's crucial you stand out as the first and place your stake. Establishing or upgrading to a modern website is the only step needed to ensure your company has the best stake it can in the online market.",
           ButtonText: "Our Services",

@@ -1,8 +1,10 @@
 import React from "react";
 import Button from "@/components/Button/Button";
 import SlideIn from "@/hooks/SlideIn";
+import Image from "next/image";
 
-const ImageTextTwo = ({ITTitle = "", ITSubTitle = "", Image, Title = "", Description = "", ButtonText = ""}) => {
+const ImageTextTwo = ({ITTitle = "", ITSubTitle = "", SVGImage, PixelImage, Title = "", Description = "", ButtonText = ""}) => {
+
   return (
     <section className="flex flex-col justify-center text-center x-margin my-20">
         <div className="px-[10%]">
@@ -16,9 +18,19 @@ const ImageTextTwo = ({ITTitle = "", ITSubTitle = "", Image, Title = "", Descrip
 
         <div className="flex flex-col md:flex-row items-center pt-8">
             <div className="w-[50%] flex justify-center">
-                <div className="w-full md:w-[50%] ">
+                <div className={`w-full ${SVGImage ? "md:w-[50%]" : "md:w-[75%]"}`}>
                     <SlideIn delay={200}>
-                        {Image}
+                        {SVGImage ? (
+                            SVGImage
+                        ) : (
+                            <Image 
+                                src={PixelImage.src}
+                                alt={PixelImage.alt || ""}
+                                width={PixelImage.width || 500} 
+                                height={PixelImage.height || 300}
+                                className="rounded-[15px]"
+                            />
+                        )}
                     </SlideIn>
                 </div>
             </div>
