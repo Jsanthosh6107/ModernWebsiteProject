@@ -10,11 +10,11 @@ const RightIcon = ({classes = ""}) => {
             className={classes}
             role="img"
         >
-            <g id="SVGRepo_bgCarrier" strokeWidth="0" />
+            <g strokeWidth="0" />
 
-            <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+            <g strokeLinecap="round" strokeLinejoin="round" />
 
-            <g id="SVGRepo_iconCarrier">
+            <g>
                 <path
                     fillRule="evenodd"
                     clipRule="evenodd"

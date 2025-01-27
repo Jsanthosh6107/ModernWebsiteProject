@@ -23,7 +23,7 @@ const GiftSalesIcon = ({ classes = "" }) => {
         </style>
       </defs>
 
-      <g id="gift">
+      <g>
         <line className="cls-1" x1="56" x2="53" y1="7" y2="10" />
         <line className="cls-1" x1="53" x2="56" y1="7" y2="10" />
         <path

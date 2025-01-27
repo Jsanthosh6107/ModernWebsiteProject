@@ -11,11 +11,11 @@ const WrongIcon = ({classes = ""}) => {
             className={classes}
             role="img"           
         >
-            <g id="SVGRepo_bgCarrier" strokeWidth="0" />
+            <g strokeWidth="0" />
 
-            <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+            <g strokeLinecap="round" strokeLinejoin="round" />
 
-            <g id="SVGRepo_iconCarrier">
+            <g>
                 <path
                     d="M332 663.2c-9.6 9.6-9.6 25.6 0 35.2s25.6 9.6 35.2 0l349.6-356c9.6-9.6 9.6-25.6 0-35.2s-25.6-9.6-35.2 0L332 663.2z"
                     fill=""

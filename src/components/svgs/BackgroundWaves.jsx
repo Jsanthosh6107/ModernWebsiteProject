@@ -3,7 +3,6 @@ import React from "react";
 const BackgroundWaves = () => {
     return (
         <svg 
-            id="visual"
             viewBox="0 0 960 540"
             xmlns="http://www.w3.org/2000/svg" 
             href="http://www.w3.org/1999/xlink"

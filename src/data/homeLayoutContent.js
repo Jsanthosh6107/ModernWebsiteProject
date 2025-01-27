@@ -1,4 +1,4 @@
-import { StockIcon, WebsiteAttentionIcon, AccessibleIcon, GiftSalesIcon, HotSalesIcon, PurchaseMobileSalesIcon, CardRemoveIcon, ShopSalesIcon } from "@/components/svgs";
+import { StockIcon, WebsiteAttentionIcon, AccessibleIcon, GiftSalesIcon, HotSalesIcon, PurchaseMobileSalesIcon, CartRemoveIcon, ShopSalesIcon } from "@/components/svgs";
 
 export const homeLayout = [
     {
@@ -57,7 +57,7 @@ export const homeLayout = [
             { svg: <GiftSalesIcon />, title: "Hyper Optimized", description: "Modern websites are optimized for the customer, reducing loading speeds and being more secure."},
             { svg: <HotSalesIcon />, title: "Sales In Mind", description: "A good website is optimized to lead the client to a sale, which should be the primary purpose."},
             { svg: <PurchaseMobileSalesIcon />, title: "Reputable Branding", description: "Serving as your business online, a website is often the first way your customer discovers you."},
-            { svg: <CardRemoveIcon />, title: "Client First", description: "A modern website is designed to make the client experience optimal, ensuring a good first impression."},
+            { svg: <CartRemoveIcon />, title: "Client First", description: "A modern website is designed to make the client experience optimal, ensuring a good first impression."},
           ]
         },
       },

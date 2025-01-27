@@ -20,7 +20,7 @@ const ShopSalesIcon = ({ classes = "" }) => {
         </style>
       </defs>
 
-      <g id="e-shop">
+      <g>
         <circle className="cls-1" cx="11.5" cy="24.5" r="2.5" />
         <path d="M55.6324,14.5A1.1324,1.1324,0,1,1,54.5,13.3676,1.1324,1.1324,0,0,1,55.6324,14.5Z" />
         <rect className="cls-1" height="22" rx="2.3073" width="45" x="3" y="39" />

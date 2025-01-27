@@ -9,11 +9,11 @@ const AccessibleIcon = ({ classes = "" }) => {
       aria-labelledby="accessibleIconTitle"
       role="img"
     >
-      <title id="accessibleIconTitle">Accessible Icon</title>
+      <title>Accessible Icon</title>
       <defs>
         <style>{`.cls-1,.cls-2{fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px;}.cls-1{stroke-linecap:round;}`}</style>
       </defs>
-      <g id="wishlist">
+      <g>
         <line className="cls-1" x1="41.5858" x2="44.4142" y1="5.0858" y2="7.9142" />
         <line className="cls-1" x1="44.4142" x2="41.5858" y1="5.0858" y2="7.9142" />
         <path

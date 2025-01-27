@@ -12,6 +12,6 @@ export { default as AccessibleIcon } from "./AccessibleIcon";
 export { default as GiftSalesIcon } from "./GiftSalesIcon";
 export { default as HotSalesIcon } from "./HotSalesIcon";
 export { default as PurchaseMobileSalesIcon } from "./PurchaseMobileSalesIcon";
-export { default as CardRemoveIcon } from "./CardRemoveIcon";
+export { default as CartRemoveIcon } from "./CartRemoveIcon";
 export { default as ShopSalesIcon } from "./ShopSalesIcon";
 
