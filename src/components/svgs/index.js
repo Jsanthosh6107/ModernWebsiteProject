@@ -14,4 +14,5 @@ export { default as HotSalesIcon } from "./HotSalesIcon";
 export { default as PurchaseMobileSalesIcon } from "./PurchaseMobileSalesIcon";
 export { default as CartRemoveIcon } from "./CartRemoveIcon";
 export { default as ShopSalesIcon } from "./ShopSalesIcon";
+export { default as ContactIcon } from "./ContactIcon";
 
