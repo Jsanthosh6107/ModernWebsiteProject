@@ -48,7 +48,7 @@ const EmailForm = ({ emailTitle = "", emailDescription = []}) => {
                 <SlideIn delay={0}>
                     <h2 className="text-4xl font-semibold md:pr-[20%]">{emailTitle}</h2>
                 </SlideIn>
-                <SlideIn delay={100}>
+                <SlideIn delay={100} classes='flex flex-col gap-4'>
                     {emailDescription.map((text, index) => (
                         <p className="text-lg" key={index}>
                             {text}
