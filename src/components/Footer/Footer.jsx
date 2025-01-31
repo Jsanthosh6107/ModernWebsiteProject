@@ -28,8 +28,10 @@ const Footer = ({buttonText = "", callToAction = "", links = [], copyright = ""}
                       </div>
                   ))}
               </div>
-              <div>
-                  <p>© {currentYear} – {copyright}</p>
+              <div className="text-right sm:text-center flex flex-col-reverse sm:flex-row gap-2">
+                  <p>©{currentYear}</p>
+                  <p>–</p>
+                  <p>{copyright}</p>
               </div>
           </div>
       </div>

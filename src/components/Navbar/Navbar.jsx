@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { StockIcon } from "@/components/svgs";
+import { JacksonLogo } from "@/components/svgs";
 import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
 import SlideIn from "@/hooks/SlideIn";
@@ -25,7 +25,7 @@ const Navbar = ({ navList = [] }) => {
       <nav className="flex flex-row justify-between items-center x-margin pt-8">
         {/* Left section: Logo */}
         <SlideIn flip={true}>
-          <StockIcon fill="black" aria-label="Company Logo" classes="w-20" />
+          <JacksonLogo fill="black" aria-label="Company Logo" classes="w-28" />
         </SlideIn>
         {/* Center section: Nav links (hidden on small screens) */}
         <SlideIn flip={true} delay={100}>

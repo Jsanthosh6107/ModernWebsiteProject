@@ -3,7 +3,7 @@ import { OneIcon, TwoIcon, ThreeIcon } from "@/components/svgs";
 import SlideIn from "@/hooks/SlideIn";
 
 const Shelf = ({headers = [], text = []}) => {
-    const divClasses = "flex flex-col items-center"
+    const divClasses = "flex flex-col items-center xl:flex-1"
   return (
         <SlideIn delay={500}>
             <section className="flex flex-row flex-wrap xl:flex-nowrap justify-center text-center x-margin mt-40 full-box-shadow px-12 rounded-[50px] pb-20 bg-white">

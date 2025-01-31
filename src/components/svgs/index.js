@@ -15,4 +15,4 @@ export { default as PurchaseMobileSalesIcon } from "./PurchaseMobileSalesIcon";
 export { default as CartRemoveIcon } from "./CartRemoveIcon";
 export { default as ShopSalesIcon } from "./ShopSalesIcon";
 export { default as ContactIcon } from "./ContactIcon";
-
+export { default as JacksonLogo } from "./JacksonLogo"; 

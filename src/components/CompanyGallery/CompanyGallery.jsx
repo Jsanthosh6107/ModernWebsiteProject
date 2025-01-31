@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const CompanyGallery = ({ images = [] }) => {
   return (
-    <section className="flex flex-col items-center md:flex-row justify-center x-margin my-20">
+    <section className="flex flex-col items-center md:flex-row justify-center x-margin my-20" id="clients">
       {images.map((image, index) => (
         <div
           key={index}

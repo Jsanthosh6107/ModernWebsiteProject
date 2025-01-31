@@ -3,7 +3,7 @@ import SlideIn from "@/hooks/SlideIn";
 
 const Tiles = ({tilesHeader = "", tilesTitle = "", tiles = []}) => {
   return (
-    <section className="x-margin my-20">
+    <section className="x-margin my-20" id="benefits">
         <div className="flex flex-col justify-center text-center md:px-[10%] pb-12">
             <SlideIn>
                 <p className="text-xl font-medium">{tilesHeader}</p>

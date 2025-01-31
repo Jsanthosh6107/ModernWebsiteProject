@@ -16,7 +16,7 @@ const Hero = ({heroTitle = "", heroDescription = ""}) => {
         </SlideIn>
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-12">
               <SlideIn delay={200}>
-                <Button text="Our Work" flipColor={false} classes="fadeUp-200"/>
+                <Button text="About Us" flipColor={false} classes="fadeUp-200"/>
               </SlideIn>
               <SlideIn delay={300}>
                 <Button text="Contact Us" flipColor={true} classes="fadeUp-300"/>

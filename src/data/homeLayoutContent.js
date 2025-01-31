@@ -1,21 +1,21 @@
-import { StockIcon, WebsiteAttentionIcon, AccessibleIcon, GiftSalesIcon, HotSalesIcon, PurchaseMobileSalesIcon, CartRemoveIcon, ShopSalesIcon } from "@/components/svgs";
+import { WebsiteAttentionIcon, AccessibleIcon, GiftSalesIcon, HotSalesIcon, PurchaseMobileSalesIcon, CartRemoveIcon, ShopSalesIcon } from "@/components/svgs";
 
 export const homeLayout = [
-    {
+      {
         type: "Hero", 
         data: {
-            heroTitle: "Modernize Your Website And Stand Out",
-            heroDescription: "Present the best version of your business and appeal to all customers"
+            heroTitle: "Get a $3,000 Website for Just $500",
+            heroDescription: "Industry-standard sites at a fraction of the cost. Get found on Google. Designed to convert."
         },
     },
     {
         type: "Shelf",
         data: {
-          headers: ["Modernize", "Accessibility", "Growth"],
+          headers: ["More Sales", "Better SEO", "Higher Conversions"],
           text: [
-            "Modernizing your website is crucial in this era of technology. Too many websites are out of date, and often hinder the clients experience in the process.",
-            "Accessibility is crucial in this day and age, and it's important to have a website capable of usability to all who need it.",
-            "A website is a cornerstone for any online growth, so starting with the most relevant website is the fastrack to becoming known in your space.",
+            "SEO-optimized websites get 1,000%+ more traffic than those using basic builders like Wix, Squarespace, and WordPress. If your site isn’t ranking, your competition is stealing your leads.",
+            "57% of people won’t recommend your business if your site isn’t mobile-friendly. Don’t let outdated design cost you customers!",
+            "High-performing websites convert 200-400% more visitors into customers. A slow or poorly designed site is leaving money on the table!",
           ],
         },
       },
@@ -34,38 +34,38 @@ export const homeLayout = [
         data: {
           imageInfo: {
             src: "/images/StandOut.jpg",
-            alt: "Image of Standing Out",
+            alt: "Standing Out in a Crowd",
             width: 800,
             height: 500,
           },
           textContent: [
-            "Your website will always be your best form of advertising",
-            "It serves as a landing point for your clients, while also being the call to action to finalize a sale",
-            "With the best website on the market, you can be sure you stand out online.",
+            "You don’t need to spend thousands to get a powerful, high-converting website.",
+            "We’re offering the same premium quality for just $500 instead of $3,000!",
+            "Don’t let your website hold you back. Get a site that works as hard as you do—for a fraction of the price!",
           ],
           inverted: false,
         },
-      },
+    },
       {
         type: "Tiles",
         data: {
-          tilesHeader: "Branding . Growth . Attention",
-          tilesTitle: "How to use the worlds best form of advertising",
+          tilesHeader: "Exposure . Conversions . Attention",
+          tilesTitle: "There's a million reasons to upgrade your website",
           tiles: [
-            { svg: <WebsiteAttentionIcon />, title: "Get Attention", description: "A modern website is the best way to get attention online, and is the virtual business representing who you are."},
-            { svg: <AccessibleIcon />, title: "Easily Accessible", description: "A modern website makes your business accessible to all, and allows everyone to find your product."},
-            { svg: <GiftSalesIcon />, title: "Hyper Optimized", description: "Modern websites are optimized for the customer, reducing loading speeds and being more secure."},
-            { svg: <HotSalesIcon />, title: "Sales In Mind", description: "A good website is optimized to lead the client to a sale, which should be the primary purpose."},
-            { svg: <PurchaseMobileSalesIcon />, title: "Reputable Branding", description: "Serving as your business online, a website is often the first way your customer discovers you."},
-            { svg: <CartRemoveIcon />, title: "Client First", description: "A modern website is designed to make the client experience optimal, ensuring a good first impression."},
+            { svg: <WebsiteAttentionIcon />, title: "Sales While Asleep", description: "We'll put your website at the top of google, so even when you sleep you'll be getting customers."},
+            { svg: <AccessibleIcon />, title: "Optimized to sell", description: "We've perfected our websites so they maximize sales. With the perfect user experience, you'll see incredible results. "},
+            { svg: <GiftSalesIcon />, title: "Best in Jackson", description: "You won't find anyone else in Jackson like us, selling the highest tech with the lowest prices, we have the best of both worlds"},
+            { svg: <HotSalesIcon />, title: "Revenue First, Looks Second", description: "We care about conversions first, your website will be prioritized to sell, not to look pretty. Don't worry though, we're perfectly capable of doing both!"},
+            { svg: <PurchaseMobileSalesIcon />, title: "Reputable Branding", description: "Our websites are tailored to create trust and loyalty to your brand, ensuring your customers pick you every time."},
+            { svg: <CartRemoveIcon />, title: "No More Expenses", description: "With our websites made from scratch, you won't need to pay fees to Wordpress or Wix, it's all yours!"},
           ]
         },
       },
       {
         type: "ImageTextTwo",
         data: {
-          ITTitle: "No Reason To Wait",
-          ITSubTitle: "Lead your competition & top your industry right now",
+          ITTitle: "Why Trust us?",
+          ITSubTitle: "Isn't $500 too good to be true?",
           SVGImage: <ShopSalesIcon />,
           /*PixelImage: {
             src: "/images/StandOut.jpg",
@@ -73,30 +73,31 @@ export const homeLayout = [
             width: 800,
             height: 500,
           }, This can be used as a hero if set up correctly*/ 
-          Title: "Fast Process, Quick Setup, Results Speak For Themselves",
-          Description: "A modern website tailored for the current online space will always dominate the market. In an enviroment that's dictated by attention, it's crucial you stand out as the first and place your stake. Establishing or upgrading to a modern website is the only step needed to ensure your company has the best stake it can in the online market.",
-          ButtonText: "Our Services",
+          Title: "Why We're The Best Opportunity You'll Ever Discover",
+          Description: "We've seen the Jackson market, and we're appalled. We found websites that are so poorly created and extravagantly charged with monthtly bills so ludicrous it made our wallets cry, we had to enter the market. With websites created to sell, technology that'll be relevant for years to come, and performance to get you customers right off google, we're confident you'll find no one else like us",
+          ButtonText: "Contact Us",
         }
       },
       {
         type: "Comparison",
         data: {
-          headerOne: "Before",
-          headerTwo: "After",
+          headerOne: "DIY Websites",
+          headerTwo: "Our Websites",
           listOne: [
-            "Your business doesn't recieve online attention",
-            "Your exposure is limited",
-            "You rely on less efficient marketing",
-            "You're out of place in a modern ecosystem"
+            "Invisible to google",
+            "Poorly optimized, low conversions",
+            "Slow and a bottleneck to sales",
+            "Convoluted and negative to your brand"
           ],
           listTwo: [
-            "You start attracting valuable attention to your business",
-            "You recieve the maximum exposure your company should get",
-            "Your business benefits from an efficient marketing landing point",
-            "You stand out from other businesses and show relevance"
+            "Top of Google",
+            "Best technology on the market",
+            "Your strongest selling factor online",
+            "Positive to your brand and loyalty"
           ]
         }
       },
+      /*
       {
         type: "Cards",
         data: {
@@ -179,7 +180,7 @@ export const homeLayout = [
             }
           ]
         }
-      },      
+      },    
       {
         type: "Quotes",
         data: {
@@ -207,6 +208,7 @@ export const homeLayout = [
           ]
         }
       },
+      */   
       {
         type: "Numbers",
         data: {
@@ -224,11 +226,11 @@ export const homeLayout = [
           buttonText: "Interested?",
           callToAction: "Let's Talk.",
           links: [
-            {text: "Facebook", url: "https://www.google.com"},
-            {text: "Instagram", url: "https://www.google.com"},
-            {text: "LinkedIn", url: "https://www.google.com"},
+            {text: "Facebook", url: "https://www.facebook.com/jacksontechagency/"},
+            {text: "Instagram", url: "https://www.facebook.com/jacksontechagency/"},
+            {text: "LinkedIn", url: "https://www.facebook.com/jacksontechagency/"},
           ],
-          copyright: "Media"
+          copyright: "Jackson Tech Media"
         }
       },
 ]

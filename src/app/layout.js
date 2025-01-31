@@ -48,9 +48,9 @@ export const navbarData = [
       navList: [
         { text: "home", url: "/" },
         { text: "about", url: "/#" },
-        { text: "services", url: "/#" },
-        { text: "portfolio", url: "/#" },
-        { text: "clients", url: "/#" },
+        { text: "contact", url: "/#" },
+        { text: "clients", url: "/#clients" },
+        { text: "benefits", url: "/#benefits" },
       ],
     },
   },
