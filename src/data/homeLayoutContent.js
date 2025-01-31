@@ -13,7 +13,7 @@ export const homeLayout = [
         data: {
           headers: ["More Sales", "Better SEO", "Higher Conversions"],
           text: [
-            "SEO-optimized websites get 1,000%+ more traffic than those using basic builders like Wix, Squarespace, and WordPress. If your site isn’t ranking, your competition is stealing your leads.",
+            "Search optimized websites get 1,000%+ more traffic than those using basic builders like Wix, Squarespace, and WordPress. If your site isn’t ranking, your competition is stealing your leads.",
             "57% of people won’t recommend your business if your site isn’t mobile-friendly. Don’t let outdated design cost you customers!",
             "High-performing websites convert 200-400% more visitors into customers. A slow or poorly designed site is leaving money on the table!",
           ],

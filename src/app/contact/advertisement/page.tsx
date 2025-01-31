@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 export default function Home() {
-  const canonicalUrl = "https://modernwebsites.vercel.app"; // Replace with your actual URL
+  const canonicalUrl = "https://jacksontechagency.com"; // Replace with your actual URL
 
   return (
     <>

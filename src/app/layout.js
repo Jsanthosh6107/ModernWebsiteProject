@@ -3,19 +3,19 @@ import Navbar from "@/components/Navbar/Navbar";
 import { BackgroundWaves} from "@/components/svgs";
 
 export const metadata = {
-  title: 'Modern Websites',
-  description: 'Upgrade to a modern website for performance, accessibility, and growth',
+  title: 'Jackson Tech Agency',
+  description: 'Upgrade to a modern website for sales, SEO, and conversions',
   openGraph: {
-    title: 'Modern Website',
-    description: 'Upgrade to a modern website for performance, accessibility, and growth',
-    url: 'https://modernwebsites.vercel.app',
-    siteName: 'ModernWebsites',
+    title: 'Jackson Tech Agency',
+    description: 'Upgrade to a modern website for sales, SEO, and conversions',
+    url: 'https://jacksontechagency.com',
+    siteName: 'Jackson Tech Agency',
     images: [
       {
-        url: 'https://modernwebsites.vercel.app/images/Logo.png',
+        url: 'https://jacksontechagency.com/images/Logo.png',
         width: 800,
         height: 600,
-        alt: 'Modern Logo',
+        alt: 'JTA Logo',
       },
     ],
     locale: 'en_US',
@@ -23,21 +23,20 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'My Website',
-    description: 'Welcome to My Website, the best place to learn and grow!',
-    images: ['https://modernwebsites.vercel.app/images/Logo.png'],
+    title: 'Jackson Tech Agency',
+    description: 'Upgrade to a modern website for sales, SEO, and conversions',
+    images: ['https://jacksontechagency.com/images/Logo.png'],
   },
 };
 
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Modern Website",
-  "url": "https://modernwebsites.vercel.app",
-  "logo": 'https://modernwebsites.vercel.app/images/Logo.png',
+  "name": "Jackson Tech Agency",
+  "url": "https://jacksontechagency.com",
+  "logo": 'https://jacksontechagency.com/images/Logo.png',
   "sameAs": [
-    "https://www.facebook.com/modernwebsites",
-    "https://www.twitter.com/modernwebsites"
+    "https://www.facebook.com/jacksontechagency"
   ]
 };
 
@@ -47,8 +46,8 @@ export const navbarData = [
     data: {
       navList: [
         { text: "home", url: "/" },
-        { text: "about", url: "/#" },
-        { text: "contact", url: "/#" },
+        { text: "about", url: "/about" },
+        { text: "contact", url: "/contact" },
         { text: "clients", url: "/#clients" },
         { text: "benefits", url: "/#benefits" },
       ],
@@ -74,7 +73,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:description" content={metadata.twitter.description} />
         <meta name="twitter:image" content={metadata.twitter.images[0]} />
         <meta name="google-site-verification" content="RzZSnijK1k1CAbyHtofAzzO3YVufxy61eI5hbyYrWFc" />
-        <link rel="canonical" href="https://modernwebsites.vercel.app" />
+        <link rel="canonical" href="https://jacksontechagency.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
