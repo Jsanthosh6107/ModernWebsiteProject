@@ -9,6 +9,7 @@ import Quotes from "@/components/Quotes/Quotes";
 import Numbers from "@/components/Numbers/Numbers";
 import Footer from "@/components/Footer/Footer";
 import Cards from "@/components/Cards/Cards";
+import EmailForm from "@/components/Forms/EmailForm";
 
 const PagelayoutRenderer = ({ layout }) => {
     const renderComponent = (item, index) => {
@@ -42,6 +43,8 @@ const PagelayoutRenderer = ({ layout }) => {
                 return <Numbers key={index} numbersList={item.data.numbersList} />
             case "Footer":
                 return <Footer key={index} buttonText={item.data.buttonText} callToAction={item.data.callToAction} links={item.data.links} copyright={item.data.copyright} />
+            case "EmailForm":
+                return <EmailForm key={index} emailTitle={item.data.emailTitle} emailDescription={item.data.emailDescription} />
             default:
                 return null;
         }

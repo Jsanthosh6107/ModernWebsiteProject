@@ -10,7 +10,7 @@ const SlideIn = ({ children, delay = 0, flip = false, classes = "" }) => {
   useEffect(() => {
     // Determine the threshold based on screen size
     const isMobile = window.matchMedia("(max-width: 768px)").matches;
-    const threshold = isMobile ? 0 : 0.1; // Reduced threshold for mobile
+    const threshold = isMobile ? 0 : 0; // Reduced threshold for mobile
 
     const observer = new IntersectionObserver(
       ([entry]) => {

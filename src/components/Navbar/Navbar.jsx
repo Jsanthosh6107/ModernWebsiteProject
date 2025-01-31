@@ -29,7 +29,7 @@ const Navbar = ({ navList = [] }) => {
         </SlideIn>
         {/* Center section: Nav links (hidden on small screens) */}
         <SlideIn flip={true} delay={100}>
-          <ul className="hidden md:flex flex-row gap-2 lg:gap-8 font-medium text-lg">
+          <ul className="hidden md:flex flex-row gap-0 lg:gap-8 font-medium text-lg">
             {navList.map((nav, index) => (
               <li key={index}>
                 <a
