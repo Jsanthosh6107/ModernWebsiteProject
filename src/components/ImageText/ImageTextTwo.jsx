@@ -18,7 +18,7 @@ const ImageTextTwo = ({ITTitle = "", ITSubTitle = "", SVGImage, PixelImage, Titl
 
         <div className="flex flex-col md:flex-row items-center pt-8">
             <div className="w-[50%] flex justify-center">
-                <div className={`w-full ${SVGImage ? "md:w-[50%]" : "md:w-[75%]"}`}>
+                <div className={`w-full ${SVGImage ? "md:w-[50%]" : "md:w-[90%]"}`}>
                     <SlideIn delay={200}>
                         {SVGImage ? (
                             SVGImage

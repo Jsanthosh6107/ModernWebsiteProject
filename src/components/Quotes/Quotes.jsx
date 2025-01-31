@@ -64,7 +64,7 @@ const Quotes = ({ quoteList = [] }) => {
                 <p className="text-xl text-left">{quote.quote}</p>
                 <div className="flex flex-row items-center gap-2">
                   <p className="font-semibold text-2xl">{quote.name}</p>
-                  <span>-</span>
+                  <span>{quote.business ? "-" : ""}</span>
                   <p className="text-lg">{quote.business}</p>
                 </div>
               </div>
