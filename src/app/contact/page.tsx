@@ -13,7 +13,7 @@ export default function Home() {
             Get in Touch with Us
           </h1>
           <p className="text-lg text-center sm:text-left text-gray-600 max-w-lg mt-4">
-            We're here to assist you. Whether you have a question, want to start a project, or need support, feel free to reach out!
+            We&apos;re here to assist you. Whether you have a question, want to start a project, or need support, feel free to reach out!
           </p>
         </div>
 
