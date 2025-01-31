@@ -42,7 +42,7 @@ const ImageTextTwo = ({ITTitle = "", ITSubTitle = "", SVGImage, PixelImage, Titl
                     <p className="text-lg">{Description}</p>
                 </SlideIn>
                 <SlideIn delay={400}>
-                    <Button text={ButtonText} flipColor={false} />
+                    <Button text={ButtonText} flipColor={false} link="/contact"/>
                 </SlideIn>
             </div>
         </div>

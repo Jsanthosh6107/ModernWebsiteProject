@@ -10,8 +10,9 @@ export const aboutLayout = [
             width: 800,
             height: 500,
           }, 
-          Title: "We're Local, And We're In The Market For Results",
-          Description: "Entering the market, we saw substandard websites, overly high prices, and businesses that were based in entirely different countries. We're here to change that. Based directly in Jackson, our goal is to show this city what a real website looks like, and if you'll give us the chance, we'll spin up one of the best websites your industry has ever seen, while bringing you customers from every part of Jackson and beyond.",
+          Title: "Local Expertise, Real Results",
+          Description: 
+            "We started with one goal in mind: bring high-performing, affordable websites to businesses right here in Jackson. In a market flooded with overseas services and outdated approaches, we stand apart by putting your success first. Give us the chance to prove it, and we’ll deliver a website that not only looks great but drives real customers—locally and beyond.",
           ButtonText: "Contact Us",
         }
       },
@@ -19,10 +20,42 @@ export const aboutLayout = [
         type: "Tiles",
         data: {
           tiles: [
-            { svg: <AccessibleIcon />, title: "We Care About You", description: "Unlike other Agencies, we're new to the market, and have a desire to prove ourselves. We'll go above and beyond to see your website on top."},
-            { svg: <PurchaseMobileSalesIcon />, title: "Latest Tech", description: "Due to our relevancy to the field, you'll have the newest tech ensuring you're always ahead of your competition in attention and style."},
-            { svg: <GiftSalesIcon />, title: "Best in Jackson", description: "You won't find anyone else in Jackson like us, selling the highest tech with the lowest prices, we have the best of both worlds"},
-          ]
+            {
+              svg: <AccessibleIcon />,
+              title: "Focused on You",
+              description:
+                "We’re committed to understanding your goals, challenges, and vision. Think of us as an extension of your team, dedicated to helping you succeed online.",
+            },
+            {
+              svg: <PurchaseMobileSalesIcon />,
+              title: "Cutting-Edge Technology",
+              description:
+                "Stay ahead of the curve with modern design and development practices that keep your website fresh, fast, and on top of the competition.",
+            },
+            {
+              svg: <GiftSalesIcon />,
+              title: "Unbeatable Value",
+              description:
+                "High-end tech doesn’t have to break the bank. Our competitive pricing gives you the best of both worlds—premium quality at a fraction of the usual cost.",
+            },
+          ],
+        },
+      },
+      {
+        type: "ImageText",
+        data: {
+          imageInfo: {
+            src: "/images/StandOut.jpg",
+            alt: "Standing Out in a Crowd",
+            width: 800,
+            height: 500,
+          },
+          textContent: [
+            "Want proof we can deliver?",
+            "Send us your business details or current website link. We'll identify key improvements at no charge—no strings attached.",
+            "We’ll even create a custom sample or mock-up to show exactly how we can elevate your online presence. Just reach out to get started!",
+          ],
+          inverted: false,
         },
       },
       {

@@ -10,7 +10,7 @@ const Footer = ({buttonText = "", callToAction = "", links = [], copyright = ""}
       <div className="py-40">
           <div className="x-margin flex flex-col justify-center text-center w-auto">
               <SlideIn classes="pb-6">
-                  <Button text={buttonText} flipColor={false} invert={true}/>
+                  <Button text={buttonText} flipColor={false} invert={true} link="/contact"/>
               </SlideIn>
               <SlideIn delay={100}>
                 <h2 className="text-8xl font-semibold uppercase">{callToAction}</h2>

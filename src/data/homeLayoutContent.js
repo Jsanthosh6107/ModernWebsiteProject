@@ -5,7 +5,7 @@ export const homeLayout = [
         type: "Hero", 
         data: {
             heroTitle: "Get a $3,000 Website for Just $500",
-            heroDescription: "Industry-standard sites at a fraction of the cost. Get found on Google. Designed to convert."
+            heroDescription: "Rank on Google, capture leads 24/7, and blow past your competition with a site built to sell."
         },
     },
     {
@@ -41,31 +41,61 @@ export const homeLayout = [
           textContent: [
             "You don’t need to spend thousands to get a powerful, high-converting website.",
             "We’re offering the same premium quality for just $500 instead of $3,000!",
-            "Don’t let your website hold you back. Get a site that works as hard as you do—for a fraction of the price!",
+            "Don’t let your website hold you back. We promise results, contact us and we'll deliver!",
           ],
           inverted: false,
         },
     },
-      {
-        type: "Tiles",
-        data: {
-          tilesHeader: "Exposure . Conversions . Attention",
-          tilesTitle: "There's a million reasons to upgrade your website",
-          tiles: [
-            { svg: <WebsiteAttentionIcon />, title: "Sales While Asleep", description: "We'll put your website at the top of google, so even when you sleep you'll be getting customers."},
-            { svg: <AccessibleIcon />, title: "Optimized to sell", description: "We've perfected our websites so they maximize sales. With the perfect user experience, you'll see incredible results. "},
-            { svg: <GiftSalesIcon />, title: "Best in Jackson", description: "You won't find anyone else in Jackson like us, selling the highest tech with the lowest prices, we have the best of both worlds"},
-            { svg: <HotSalesIcon />, title: "Revenue First, Looks Second", description: "We care about conversions first, your website will be prioritized to sell, not to look pretty. Don't worry though, we're perfectly capable of doing both!"},
-            { svg: <PurchaseMobileSalesIcon />, title: "Reputable Branding", description: "Our websites are tailored to create trust and loyalty to your brand, ensuring your customers pick you every time."},
-            { svg: <CartRemoveIcon />, title: "No More Expenses", description: "With our websites made from scratch, you won't need to pay fees to Wordpress or Wix, it's all yours!"},
-          ]
-        },
+    {
+      type: "Tiles",
+      data: {
+        tilesHeader: "Exposure. Conversions. Attention.",
+        tilesTitle: "Countless Reasons to Upgrade Your Website",
+        tiles: [
+          {
+            svg: <WebsiteAttentionIcon />,
+            title: "Sales Around the Clock",
+            description: 
+              "Rank higher on Google so you attract leads and customers 24/7—no extra effort required.",
+          },
+          {
+            svg: <AccessibleIcon />,
+            title: "Optimized for Conversions",
+            description: 
+              "Every element is built to turn visitors into paying customers through a seamless user experience.",
+          },
+          {
+            svg: <GiftSalesIcon />,
+            title: "Jackson’s Best Value",
+            description: 
+              "Advanced technology meets affordable pricing—get maximum impact without breaking the bank.",
+          },
+          {
+            svg: <HotSalesIcon />,
+            title: "Revenue-Driven Design",
+            description: 
+              "Looks matter, but sales matter more. Our sites focus on bringing you real returns first and foremost.",
+          },
+          {
+            svg: <PurchaseMobileSalesIcon />,
+            title: "Strengthen Your Brand",
+            description: 
+              "Earn trust and loyalty with a professional presence that positions you as the top choice in your market.",
+          },
+          {
+            svg: <CartRemoveIcon />,
+            title: "No Hidden Fees—Ever",
+            description: 
+              "Own your site outright. We build from scratch, so you skip pricey subscriptions and retain full control.",
+          },
+        ],
       },
+    },
       {
         type: "ImageTextTwo",
         data: {
-          ITTitle: "Why Trust us?",
-          ITSubTitle: "Isn't $500 too good to be true?",
+          ITTitle: "Why Trust Us?",
+          ITSubTitle: "Isn’t $500 too good to be true?",
           SVGImage: <ShopSalesIcon />,
           /*PixelImage: {
             src: "/images/StandOut.jpg",
@@ -73,8 +103,9 @@ export const homeLayout = [
             width: 800,
             height: 500,
           }, This can be used as a hero if set up correctly*/ 
-          Title: "Why We're The Best Opportunity You'll Ever Discover",
-          Description: "We've seen the Jackson market, and we're appalled. We found websites that are so poorly created and extravagantly charged with monthtly bills so ludicrous it made our wallets cry, we had to enter the market. With websites created to sell, technology that'll be relevant for years to come, and performance to get you customers right off google, we're confident you'll find no one else like us",
+          Title: "We’re Redefining What's Possible in Jackson",
+          Description: 
+            "We noticed too many local businesses stuck with outdated, overpriced websites—often weighed down by steep monthly fees. Our solution? High-conversion design, cutting-edge tech, and top-tier performance at a fraction of the standard cost. We believe every business deserves a website that actually drives revenue, without the usual bloated price tags.",
           ButtonText: "Contact Us",
         }
       },
@@ -84,18 +115,18 @@ export const homeLayout = [
           headerOne: "DIY Websites",
           headerTwo: "Our Websites",
           listOne: [
-            "Invisible to google",
+            "Barely visible on Google",
             "Poorly optimized, low conversions",
-            "Slow and a bottleneck to sales",
-            "Convoluted and negative to your brand"
+            "Slows down your sales funnel",
+            "Reflects poorly on your brand image",
           ],
           listTwo: [
-            "Top of Google",
-            "Best technology on the market",
-            "Your strongest selling factor online",
-            "Positive to your brand and loyalty"
-          ]
-        }
+            "Strategically built to rank",
+            "Optimized for maximum conversions",
+            "Fast, reliable, and scalable",
+            "Enhances brand trust and credibility",
+          ],
+        },
       },
       /*
       {
