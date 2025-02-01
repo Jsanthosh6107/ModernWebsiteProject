@@ -5,17 +5,17 @@ import Head from "next/head";
 export const metadata = {
   title: "SEO Optimized Modern Websites At Industry Standards",
   description: "Upgrade to a modern website for performance, accessibility, and growth",
+  alternates: {
+    canonical: 'https://jacksontechagency.com',
+  }
 };
 
 export default function Home() {
-  const canonicalUrl = "https://jacksontechagency.com"; // Replace with your actual URL
-
   return (
     <>
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <link rel="canonical" href={canonicalUrl} />
       </Head>
       <PagelayoutRenderer layout={homeLayout} />
     </>

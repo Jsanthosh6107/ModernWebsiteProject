@@ -74,7 +74,6 @@ export default function RootLayout({ children }) {
         <meta name="twitter:image" content={metadata.twitter.images[0]} />
         <meta name="google-site-verification" content="RzZSnijK1k1CAbyHtofAzzO3YVufxy61eI5hbyYrWFc" />
         <meta name="theme-color" content="#E0E0E0" />
-        <link rel="canonical" href="https://jacksontechagency.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
