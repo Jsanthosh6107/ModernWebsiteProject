@@ -112,7 +112,7 @@ const Navbar = ({ navList = [] }) => {
 
         {/* Button at bottom of drawer */}
         <div className="px-6 mt-auto pb-8">
-          <Button text="Contact Us" flipColor={false} />
+          <Button text="Contact Us" flipColor={false} link="/contact"/>
         </div>
       </div>
     </header>

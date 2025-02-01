@@ -1,35 +1,48 @@
 import React from "react";
 
-const Button = ({ text = "currentText", flipColor = true, invert = false, classes="", link=""}) => {
+const Button = ({
+  text = "currentText",
+  flipColor = true,
+  invert = false,
+  classes = "",
+  link = ""
+}) => {
+  // Using Tailwind’s default border utility (which is 1px) works fine.
+  // You can also keep your border-[1px] if you prefer.
   const baseClassesParent =
-    "relative inline-block py-3.5 px-10 rounded-full border-[1px] overflow-hidden group duration-500";
+    "relative inline-block py-3.5 px-10 rounded-full border border-solid overflow-hidden group duration-500";
   const baseClassesChild =
     "absolute inset-0 -translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0";
 
-  const borderColor = invert ? "border-white font-medium" : "border-black font-semibold";
+  const borderColor = invert
+    ? "border-white font-medium"
+    : "border-black font-semibold";
 
   const parentClasses = flipColor
     ? `bg-white text-black hover:text-white ${borderColor}`
     : `bg-black text-white hover:text-black ${borderColor}`;
 
-  const childClasses = flipColor
-    ? "bg-black text-white"
-    : "bg-white text-black";
+  const childClasses = flipColor ? "bg-black text-white" : "bg-white text-black";
 
   if (link === "") {
-    link = "#"
+    link = "#";
   }
 
   return (
     <a
       className={`${baseClassesParent} ${parentClasses} ${classes}`}
       href={link}
+      // The inline styles below do two things:
+      // 1. Disable the iOS tap highlight which sometimes affects border rendering.
+      // 2. Force hardware acceleration (by using translateZ(0)) to help the browser
+      //    render the border more consistently.
+      style={{
+        WebkitTapHighlightColor: "transparent",
+        transform: "translateZ(0)"
+      }}
     >
       <span className="relative z-10">{text}</span>
-
-      <span
-        className={`${baseClassesChild} ${childClasses}`}
-      ></span>
+      <span className={`${baseClassesChild} ${childClasses}`}></span>
     </a>
   );
 };
