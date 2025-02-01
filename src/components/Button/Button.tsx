@@ -7,8 +7,6 @@ const Button = ({
   classes = "",
   link = ""
 }) => {
-  // Using Tailwind’s default border utility (which is 1px) works fine.
-  // You can also keep your border-[1px] if you prefer.
   const baseClassesParent =
     "relative inline-block py-3.5 px-10 rounded-full border border-solid overflow-hidden group duration-500";
   const baseClassesChild =
@@ -32,12 +30,8 @@ const Button = ({
     <a
       className={`${baseClassesParent} ${parentClasses} ${classes}`}
       href={link}
-      // The inline styles below do two things:
-      // 1. Disable the iOS tap highlight which sometimes affects border rendering.
-      // 2. Force hardware acceleration (by using translateZ(0)) to help the browser
-      //    render the border more consistently.
       style={{
-        WebkitTapHighlightColor: "transparent",
+        WebkitTapHighlightColor: "transparent", //Iphone fixes
         transform: "translateZ(0)"
       }}
     >
