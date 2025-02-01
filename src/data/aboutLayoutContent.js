@@ -5,8 +5,8 @@ export const aboutLayout = [
         type: "ImageTextTwo",
         data: {
           PixelImage: {
-            src: "/images/NashvilleTN.jpg",
-            alt: "Image of Nashville TN",
+            src: "/images/JacksonTN.jpg",
+            alt: "Image of Jackson TN",
             width: 800,
             height: 500,
           }, 
@@ -45,8 +45,8 @@ export const aboutLayout = [
         type: "ImageText",
         data: {
           imageInfo: {
-            src: "/images/StandOut.jpg",
-            alt: "Standing Out in a Crowd",
+            src: "/images/PositiveStocks.jpg",
+            alt: "Growing Stocks",
             width: 800,
             height: 500,
           },

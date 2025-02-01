@@ -4,7 +4,7 @@ import Head from "next/head";
 
 export const metadata = {
   title: "Contact us now for Website Consultation and Advice",
-  description: "Reach out to us at Jackson Tech Agency through email, form, or phone",
+  description: "Reach out to us at Jackson Tech Agency through email, phone, or form so we can assist and guide you",
   alternates: {
     canonical: 'https://jacksontechagency.com/contact',
   }

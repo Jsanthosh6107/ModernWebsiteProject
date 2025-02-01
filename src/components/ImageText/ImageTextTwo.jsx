@@ -7,17 +7,18 @@ const ImageTextTwo = ({ITTitle = "", ITSubTitle = "", SVGImage, PixelImage, Titl
 
   return (
     <section className="flex flex-col justify-center text-center x-margin my-20">
-        <div className="px-[10%]">
+        {(ITTitle || ITSubTitle) && ( 
+            <div className="px-[10%]">
             <SlideIn>
                 <h2 className="font-semibold text-5xl mt-[10%]">{ITTitle}</h2>
             </SlideIn>
             <SlideIn delay={100}>
                 <p className="text-2xl mt-4">{ITSubTitle}</p>
             </SlideIn>
-        </div>
-
-        <div className="flex flex-col md:flex-row items-center pt-8">
-            <div className="w-[50%] flex justify-center">
+            </div>
+        )}
+        <div className="flex flex-col md:flex-row items-center pt-8 gap-4 md:gap-0">
+            <div className={`${SVGImage ? "w-[80%]" : "w-[90%]"} md:w-[50%] flex justify-center`}>
                 <div className={`w-full ${SVGImage ? "md:w-[50%]" : "md:w-[90%]"}`}>
                     <SlideIn delay={200}>
                         {SVGImage ? (
